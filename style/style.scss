@@ -38,6 +38,7 @@ body {
 .container {
   width: 110.4rem;
   margin: 0 7rem;
+  transition: 2s;
 }
 main,
 nav,
@@ -47,6 +48,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  transition: 2s;
 }
 .btn {
   padding: 1rem 2.4rem;
@@ -229,7 +231,7 @@ section.features {
       overflow: hidden;
       width: 110.4rem;
       .slide {
-        transition: 0.1s;
+        transition: 0.6s;
         transform: translateX(-200%);
         min-width: 111.4rem;
         display: flex;
@@ -452,6 +454,12 @@ footer {
   }
 }
 // class for js
+.section__hidden {
+  .container{
+    opacity: 0 !important;
+    transform: translateX(8rem) !important;
+  }
+}
 .burger {
   display: none;
 }
@@ -656,7 +664,7 @@ footer {
   }
   section.features .container {
     zoom: 1;
-    .bg{
+    .bg {
       left: -638% !important;
       top: 60.3rem !important;
     }
@@ -701,14 +709,14 @@ footer {
     }
   }
   footer {
-    .container{
+    .container {
       padding: 4rem 0;
       flex-direction: column;
-      ul{
+      ul {
         flex-direction: column;
         justify-content: center;
       }
-      .social{
+      .social {
         margin-top: 4.8rem;
       }
     }
@@ -719,17 +727,22 @@ footer {
   }
 }
 @media (max-width: 520px) {
-  html{
+  html {
     font-size: 50%;
   }
 }
 @media (max-width: 470px) {
-  html{
+  html {
     font-size: 45%;
   }
 }
 @media (max-width: 422px) {
-  html{
+  html {
     font-size: 40%;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 35%;
   }
 }

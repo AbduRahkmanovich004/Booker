@@ -38,6 +38,7 @@ body {
 .container {
   width: 110.4rem;
   margin: 0 7rem;
+  transition: 2s;
 }
 
 main,
@@ -48,6 +49,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  transition: 2s;
 }
 
 .btn {
@@ -234,7 +236,7 @@ section.features .container .slides {
   width: 110.4rem;
 }
 section.features .container .slides .slide {
-  transition: 0.1s;
+  transition: 0.6s;
   transform: translateX(-200%);
   min-width: 111.4rem;
   display: flex;
@@ -444,6 +446,11 @@ footer .container .social svg {
 }
 footer .container .social svg:hover {
   fill: var(--red);
+}
+
+.section__hidden .container {
+  opacity: 0 !important;
+  transform: translateX(8rem) !important;
 }
 
 .burger {
@@ -718,5 +725,10 @@ footer .container .social svg:hover {
 @media (max-width: 422px) {
   html {
     font-size: 40%;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 35%;
   }
 }/*# sourceMappingURL=style.css.map */
