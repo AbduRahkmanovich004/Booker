@@ -51,10 +51,12 @@ footer {
   transition: 2s;
 }
 .btn {
+  transition: all 0.5s;
   padding: 1rem 2.4rem;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.8rem;
+  cursor: pointer;
   letter-spacing: 0.025rem;
   border-radius: 0.5rem;
   box-shadow: var(--box_shadow_btn);
@@ -341,6 +343,7 @@ section.faq {
         overflow: hidden;
         height: 7rem;
         div {
+          cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: space-between;
